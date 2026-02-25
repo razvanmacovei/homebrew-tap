@@ -5,21 +5,21 @@
 class X402Cli < Formula
   desc "CLI tool for testing x402 payment-gated endpoints"
   homepage "https://github.com/razvanmacovei/x402-cli"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.0/x402-cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "cb2b404af1d12777b9e33d8f0f21a01885c18a3bd5a101501d08497493a523ef"
+      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_darwin_amd64.tar.gz"
+      sha256 "2ecf7f1aaa95d66243aad8ed9974ec1d2fd54ed3f63197e4d9cd90de7339ca54"
 
       define_method(:install) do
         bin.install "x402-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.0/x402-cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "e5c994f8dbe12eb3868b824392e7a85372fd3d47a242aea0d25bf8efd1c8b6d3"
+      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_darwin_arm64.tar.gz"
+      sha256 "d09b30d83917b032164544170b16f3f3bb68fc3a5eed626b9a02f65cee45da37"
 
       define_method(:install) do
         bin.install "x402-cli"
@@ -29,15 +29,15 @@ class X402Cli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.0/x402-cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "6d7c0645605178997d56e9c4a03b5be2e2e632dac21fffcf7cdf79889ace8dd1"
+      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_linux_amd64.tar.gz"
+      sha256 "f7767c928010a2163c0debf87a5fa865783488646e21875db95d02849f20af8c"
       define_method(:install) do
         bin.install "x402-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.0/x402-cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "fd0b9d52dc10e98e96b274b51a6c2cab697e8b35cc6ce85dd8ba5046df2d9e3f"
+      url "https://github.com/razvanmacovei/x402-cli/releases/download/v0.2.1/x402-cli_0.2.1_linux_arm64.tar.gz"
+      sha256 "598fbd6c194e7d16c25d98f498e7e6092628bcea8941e6a8158953c7a1bc4bd8"
       define_method(:install) do
         bin.install "x402-cli"
       end
