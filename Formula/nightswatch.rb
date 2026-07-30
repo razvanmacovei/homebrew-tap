@@ -1,8 +1,8 @@
 class Nightswatch < Formula
   desc "Keep Claude Code sessions moving overnight (auto-approve, limit auto-resume)"
   homepage "https://github.com/razvanmacovei/nightswatch"
-  url "https://github.com/razvanmacovei/nightswatch/releases/download/v0.1.2/nightswatch-0.1.2.tgz"
-  sha256 "bb1680eb53f71aade9812d73b607677fd3bd37a676b4ec25740956fcca4230c2"
+  url "https://github.com/razvanmacovei/nightswatch/releases/download/v0.1.3/nightswatch-0.1.3.tgz"
+  sha256 "15bed0603831510e3fe998290dc9d547effae972b94dcf7ab85c974b8e82ae50"
   license "MIT"
 
   depends_on "node"
